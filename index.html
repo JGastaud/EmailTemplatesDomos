@@ -4,20 +4,8 @@
 <h1>Files in this repo:</h1>
 <ul id="file-list"></ul>
 
-<script>
-  async function loadFiles() {
-    const response = await fetch("https://api.github.com/repos/USERNAME/REPO_NAME/contents");
-    const files = await response.json();
 
-    const list = document.getElementById("file-list");
-    files.forEach(file => {
-      const li = document.createElement("li");
-      li.innerHTML = `<a hrefhtml_url}${file.name}</a>`;
-      list.appendChild(li);
-    });
-  }
-
-  loadFiles();
-</script>
+  <il>FILE NAME - <a href="" target="_blank">link</a></il>
+  
 </body>
 </html>
